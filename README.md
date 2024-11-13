@@ -56,6 +56,22 @@ graph TD
     E --> F
     F --> G[Attitude Correction]
     G --> H[Final Quaternion Output]
+    
+    subgraph Physics Constraints
+    D
+    E
+    end
+    
+    subgraph Transformer Processing
+    B
+    C
+    end
+    
+    subgraph Output Processing
+    F
+    G
+    H
+    end
 ```
 
 ### Data Flow
